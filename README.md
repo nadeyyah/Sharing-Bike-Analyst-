@@ -13,8 +13,6 @@ Dashboard ini dirancang untuk menganalisis data penyewaan sepeda berdasarkan fak
 ----
 
 ## Instalasi
-
-```
 ### 1. Siapkan Directori dan  Install package yang diperlukan 
 ```
 mkdir data_dashboard_project
@@ -24,7 +22,6 @@ pipenv shell
 echo -e "streamlit==1.25.0\npandas==1.5.3\nmatplotlib==3.7.1\nseaborn==0.12.2\nnumpy==1.24.3" > requirements.txt
 pip install -r requirements.txt
 ```
-
 ### 2. Menjalankan Streamlit dengan dashboard
 ```
 streamlit run dashboard.py
