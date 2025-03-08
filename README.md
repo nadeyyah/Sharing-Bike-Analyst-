@@ -13,24 +13,19 @@ Dashboard ini dirancang untuk menganalisis data penyewaan sepeda berdasarkan fak
 ----
 
 ## Instalasi
-### 1. Clone Repository
-Clone repository ini ke lokal Anda dengan perintah:
+
 ```
-git clone https://github.com/username/repository-name.git
-   cd repository-name
+### 1. Siapkan Directori dan  Install package yang diperlukan 
 ```
-### 2. Membuat dan Mengaktifkan enviroment Python
-```
-python -m venv env
-source env/bin/activate    # Linux/MacOS
-env\Scripts\activate       # Windows
-```
-### 3. Install package yang diperlukan 
-```
+mkdir data_dashboard_project
+cd data_dashboard_project
+pipenv install
+pipenv shell
+echo -e "streamlit==1.25.0\npandas==1.5.3\nmatplotlib==3.7.1\nseaborn==0.12.2\nnumpy==1.24.3" > requirements.txt
 pip install -r requirements.txt
 ```
 
-### 4. Menjalankan Streamlit dengan dashboard
+### 2. Menjalankan Streamlit dengan dashboard
 ```
 streamlit run dashboard.py
 ```
