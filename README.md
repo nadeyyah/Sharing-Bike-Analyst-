@@ -13,7 +13,13 @@ Dashboard ini dirancang untuk menganalisis data penyewaan sepeda berdasarkan fak
 ----
 
 ## Instalasi
-### 1. Siapkan Directori dan  Install package yang diperlukan 
+### Download Python melalui BREW (MacOS)
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install python
+python3 --version
+```
+### Siapkan Directori dan  Install package yang diperlukan 
 ```
 mkdir data_dashboard_project
 cd data_dashboard_project
@@ -22,7 +28,7 @@ pipenv shell
 echo -e "streamlit==1.43.0\npandas==2.2.3\nmatplotlib==3.10.1\nseaborn==0.13.2\nnnumpy==2.2.3\ngdown==5.2.0" > requirements.txt
 pip install -r requirements.txt
 ```
-### 2. Menjalankan Streamlit dengan dashboard
+### Menjalankan Streamlit dengan dashboard
 ```
 streamlit run dashboard.py
 ```
