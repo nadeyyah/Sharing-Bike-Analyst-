@@ -19,7 +19,7 @@ mkdir data_dashboard_project
 cd data_dashboard_project
 pipenv install
 pipenv shell
-echo -e "streamlit==1.25.0\npandas==1.5.3\nmatplotlib==3.7.1\nseaborn==0.12.2\nnumpy==1.24.3" > requirements.txt
+echo -e "streamlit==1.43.0\npandas==2.2.3\nmatplotlib==3.10.1\nseaborn==0.13.2\nnnumpy==2.2.3\ngdown==5.2.0" > requirements.txt
 pip install -r requirements.txt
 ```
 ### 2. Menjalankan Streamlit dengan dashboard
